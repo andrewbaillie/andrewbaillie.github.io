@@ -42,24 +42,38 @@ nav {
 	.item {
 		@include span( 1 of 5 );
 		padding-bottom: span( 1 of 5 );
-		background: red;
+		position: relative;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 		height: 0;
+
+		.inner {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 90%;
+			padding: 5%;
+			text-align: center;
+			color: $title;
+		}
+
 
 		&.double {
 			@include span( 2 of 5 );
-			background: blue;
+			background-color: blue;
 			padding-bottom: span( 2 of 5 );
 		}
 
 		&.double_wide {
 			@include span( 2 of 5 );
-			background: green;
+			background-color: green;
 			padding-bottom: span( 1 of 5 );
 		}
 
 		&.double_tall {
 			@include span( 1 of 5 );
-			background: yellow;
+			background-color: yellow;
 			padding-bottom: span( 2 of 5 );
 		}
 	}
