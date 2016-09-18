@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	color: $title;
+	font-weight: 100;
+	text-transform: uppercase;
+	@include font-size( 1.8 );
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+	letter-spacing: 0.05em;
+}
+
+a {
+	color: $link;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		color: $linkHover;
+	}
+}

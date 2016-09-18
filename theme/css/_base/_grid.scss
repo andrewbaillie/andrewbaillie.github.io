@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Grid
+   ========================================================================== */
+
+$susy: (
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+	global-box-sizing:border-box,
+	spread:1,
+	container: auto,
+	container-position: center,
+	columns: 5,
+	gutters: 0,
+	column-width: 208px,
+);
+
+html {
+  	font-size: 62.5%;
+}
+
+body {
+	background: $background;
+}
+
+.container {
+	padding: 50px 20px;
+	@include container();
+}

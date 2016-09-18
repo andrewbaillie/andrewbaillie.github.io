@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+$background: #000000;
+$lighter: #111111;
+
+$link: #aaaaaa;
+$linkHover: #eee;
+$title: #fff;
+$fadeTitle: #999;
+
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
