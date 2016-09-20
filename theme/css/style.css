@@ -491,7 +491,8 @@ body {
 nav {
   background: #111111;
   height: 50px;
-  padding: 10px 15px;
+  padding: 10px 0;
+  margin-bottom: 1px;
   box-sizing: border-box;
 }
 
@@ -503,6 +504,7 @@ nav:after {
 
 nav h1 {
   float: left;
+  padding-left: 15px;
 }
 
 nav h1 span {
@@ -514,7 +516,7 @@ nav h1 span {
 nav ul {
   float: right;
   list-style-type: none;
-  padding: 0;
+  padding: 0 15px 0 0;
   margin: 0;
   font-weight: 300;
   line-height: 30px;
@@ -527,6 +529,17 @@ nav ul li {
   margin-left: 15px;
   font-size: 12px;
   font-size: 1.2rem;
+}
+
+@media (max-width: 680px) {
+  nav {
+    height: auto;
+  }
+  nav ul {
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .portfolio:after {
@@ -641,7 +654,7 @@ nav ul li {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .portfolio .item {
     width: 100%;
     float: left;
