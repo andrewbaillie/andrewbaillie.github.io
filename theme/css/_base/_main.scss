@@ -64,14 +64,26 @@ nav {
 
 		.inner {
 			position: absolute;
-			top: 0;
 			left: 0;
 			width: 90%;
 			padding: 5%;
 			z-index: 5;
-			text-align: center;
 			color: $title;
 		}
+
+		// Vertical Positioning
+		&.top .inner { top: 0; }
+
+		&.middle .inner {
+			top: 50%;
+			transform: translateY(-50%); }
+
+		&.bottom .inner { bottom: 0; }
+
+		// Horizontal Positioning
+		&.left .inner { text-align: left; }
+		&.center .inner { text-align: center; }
+		&.right .inner { text-align: right; }
 
 
 		&.double {

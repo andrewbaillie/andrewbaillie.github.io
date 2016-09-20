@@ -563,13 +563,37 @@ nav ul li {
 
 .portfolio .item .inner {
   position: absolute;
-  top: 0;
   left: 0;
   width: 90%;
   padding: 5%;
   z-index: 5;
-  text-align: center;
   color: #fff;
+}
+
+.portfolio .item.top .inner {
+  top: 0;
+}
+
+.portfolio .item.middle .inner {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.portfolio .item.bottom .inner {
+  bottom: 0;
+}
+
+.portfolio .item.left .inner {
+  text-align: left;
+}
+
+.portfolio .item.center .inner {
+  text-align: center;
+}
+
+.portfolio .item.right .inner {
+  text-align: right;
 }
 
 .portfolio .item.double {
