@@ -48,12 +48,27 @@ nav {
 		background-position: center;
 		height: 0;
 
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transition: background 0.3s ease-in-out;
+		}
+
+		&:hover:after {
+			background: rgba( 0 , 0 , 0 , 0.6 );
+		}
+
 		.inner {
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 90%;
 			padding: 5%;
+			z-index: 5;
 			text-align: center;
 			color: $title;
 		}
@@ -61,27 +76,66 @@ nav {
 
 		&.double {
 			@include span( 2 of 5 );
-			background-color: blue;
 			padding-bottom: span( 2 of 5 );
 		}
 
 		&.double_wide {
 			@include span( 2 of 5 );
-			background-color: green;
 			padding-bottom: span( 1 of 5 );
 		}
 
 		&.double_tall {
 			@include span( 1 of 5 );
-			background-color: yellow;
 			padding-bottom: span( 2 of 5 );
 		}
 	}
 }
 
 
+@media (max-width: 900px) {
+
+	.portfolio {
+		.item {
+			@include span( 2 of 4 );
+			padding-bottom: span( 1 of 4 );
+
+			&.double, &.double_tall  {
+				@include span( 2 of 4 );
+				padding-bottom: span( 2 of 4 );
+			}
+
+			&.double_wide {
+				@include span( 2 of 4 );
+				padding-bottom: span( 1 of 4 );
+			}
+
+		}
+	}
+
+}
 
 
+@media (max-width: 600px) {
+
+	.portfolio {
+		.item {
+			@include span( 1 of 1 );
+			padding-bottom: span( 1 of 1 );
+
+			&.double, &.double_tall, &.double_wide {
+				@include span( 1 of 1 );
+				padding-bottom: span( 1 of 1 );
+			}
+
+			&.double_wide {
+				@include span( 1 of 1 );
+				padding-bottom: span( 0.5 of 1 );
+			}
+
+		}
+	}
+
+}
 
 
 
