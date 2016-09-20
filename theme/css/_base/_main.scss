@@ -53,6 +53,15 @@ nav {
 }
 
 
+.intro {
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+
+	p { padding: 20px 20% 0; }
+}
+
+
 .portfolio {
 	@include clearfix();
 
