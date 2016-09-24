@@ -576,6 +576,22 @@ nav ul li {
   clear: both;
 }
 
+.portfolio.selected .item:after {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.portfolio.selected .item.inner {
+  opacity: 0;
+}
+
+.portfolio.selected .item:hover:after {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.portfolio.selected .item:hover .inner {
+  opacity: 0;
+}
+
 .portfolio .item {
   width: 20%;
   float: left;
@@ -585,6 +601,7 @@ nav ul li {
   background-size: cover;
   background-position: center;
   height: 0;
+  cursor: pointer;
 }
 
 .portfolio .item:after {

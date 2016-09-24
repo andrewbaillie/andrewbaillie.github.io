@@ -65,6 +65,18 @@ nav {
 .portfolio {
 	@include clearfix();
 
+	&.selected {
+		.item { 
+			&:after { background: rgba( 0 , 0 , 0 , 0.9 ); }
+			&.inner { opacity: 0; }
+			
+			&:hover {
+				&:after { background: rgba( 0 , 0 , 0 , 0.9 ); }
+				.inner { opacity: 0; }
+			}
+		}
+	}
+
 	.item {
 		@include span( 1 of 5 );
 		padding-bottom: span( 1 of 5 );
@@ -73,6 +85,7 @@ nav {
 		background-size: cover;
 		background-position: center;
 		height: 0;
+		cursor: pointer;
 
 		&:after {
 			content: '';
