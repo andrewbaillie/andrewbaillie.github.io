@@ -67,13 +67,19 @@ nav {
 
 	&.selected {
 		.item { 
+
 			&:after { background: rgba( 0 , 0 , 0 , 0.9 ); }
 			&.inner { opacity: 0; }
-			
+
 			&:hover {
 				&:after { background: rgba( 0 , 0 , 0 , 0.9 ); }
 				.inner { opacity: 0; }
 			}
+
+			&.highlight {
+				
+			}
+
 		}
 	}
 

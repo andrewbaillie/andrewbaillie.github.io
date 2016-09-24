@@ -12,14 +12,31 @@ $( document ).ready(function() {
 
 		e.preventDefault();
 
-		if ( $('.portfolio').hasClass('selected') ) {
-			$('.portfolio').removeClass('selected');
-			$('.item').removeClass('highlight');
-		} else {
+		// if ( $('.portfolio').hasClass('selected') ) {
+		// 	$('.portfolio').removeClass('selected');
+		// 	$('.item').removeClass('highlight');
+		// } else {
 			$('.portfolio').addClass('selected');
 			$(this).addClass('highlight');
-		}
+		// }
+
+		$('#modal-18').addClass('md-show');
+
+		setTimeout( function() {
+			$('html').addClass( 'md-perspective' );
+		}, 25 );
 
 	} );
 
+	$(document).on( 'click' , '.md-modal .md-close' , function() {
+		$('.md-modal').removeClass( 'md-show' );
+		$('html').removeClass( 'md-perspective' );	
+
+		$('.portfolio').removeClass('selected');
+		$('.item').removeClass('highlight');
+	});
+
+	
 });
+
+
