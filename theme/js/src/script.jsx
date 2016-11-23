@@ -16,6 +16,18 @@ var Website = new React.createClass( {
 			});
   	},
 
+  	componentDidUpdate: function () {
+
+  		if ( this.state.loaded ) {
+
+	  		var pckry = new Packery( '.portfolio', {
+			 	percentPosition: true
+			});
+
+		}
+
+  	},
+
 	render: function () {
 
 		if ( this.state.loaded ) {
@@ -35,7 +47,7 @@ var Website = new React.createClass( {
 				);
 			});
 
-			return <div>{ siteList }</div>;
+			return <div className="portfolio">{ siteList }</div>;
 
 		} else {
 
