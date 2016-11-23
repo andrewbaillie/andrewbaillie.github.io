@@ -14,7 +14,8 @@ plumber     = require('gulp-plumber'),
 rename      = require('gulp-rename'),
 sass        = require('gulp-sass'),
 sourcemaps  = require('gulp-sourcemaps'),
-uglify      = require('gulp-uglify');
+uglify      = require('gulp-uglify'),
+babel 		= require("gulp-babel");
 
 // Set the banner
 var now = dateFormat(new Date(), "yyyy-mm-dd HH:MM:ss Z"),
@@ -101,15 +102,15 @@ gulp.task('scripts', function() {
 });
 
 // Plugin scripts task: Concat JS files for plugins
-gulp.task('plugin-scripts', function() {
-	gulp.src('theme/js/plugins/*.js')
-		.pipe(concat('plugins.min.js'))
-		.pipe(header(banner, { pkg: pkg } ))
-		.pipe(gulp.dest('theme/js/'))
-		.pipe(notify(function (file) {
-			return 'Plugin Scripts: ' + file.relative + ' generated.';
-		}));
-});
+// gulp.task('plugin-scripts', function() {
+// 	gulp.src('theme/js/plugins/*.js')
+// 		.pipe(concat('plugins.min.js'))
+// 		.pipe(header(banner, { pkg: pkg } ))
+// 		.pipe(gulp.dest('theme/js/'))
+// 		.pipe(notify(function (file) {
+// 			return 'Plugin Scripts: ' + file.relative + ' generated.';
+// 		}));
+// });
 
 // Styles task: Compile Sass, add prefixes and minify
 gulp.task('styles', function() {
@@ -145,10 +146,21 @@ gulp.task('plugin-styles', function() {
 		}));
 });
 
+
+gulp.task("babel", function(){
+    gulp.src("theme/js/src/script.jsx")
+    	.pipe(babel({plugins: ['transform-react-jsx']}))
+    	.pipe(gulp.dest("theme/js/"))
+    	.pipe(notify(function (file) {
+			return 'JSX: ' + file.relative + ' generated.';
+		}));
+});
+
+
 // Standard watch task
 gulp.task('watch', function() {
-	gulp.watch('theme/js/src/*.js', ['jshint', 'scripts']);
-	gulp.watch('theme/js/plugins/*.js', ['plugin-scripts']);
+	gulp.watch('theme/js/src/*.jsx', ['babel']);
+	// gulp.watch('theme/js/plugins/*.js', ['plugin-scripts']);
 	gulp.watch('theme/css/**/*.scss', ['styles']);
 	gulp.watch('theme/css/plugins/*.css', ['plugin-styles']);
 });

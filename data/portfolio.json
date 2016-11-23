@@ -1,0 +1,26 @@
+{
+	"portfolio":
+	[
+    	{
+    		"url":		"http://www.google.com",
+    		"title":	"Website Title",
+    		"tagline": 	"Short Tagline About Website",
+    		"image":	"/images/desk.jpg",
+    		"classes":	"double_tall top left"
+    	},
+    	{
+    		"url":		"http://www.google.com",
+    		"title":	"Website Title",
+    		"tagline": 	"Short Tagline About Website",
+    		"image":	"/images/car.jpg",
+    		"classes":	"bottom right"
+    	},
+    	{
+    		"url":		"http://www.google.com",
+    		"title":	"Website Title",
+    		"tagline": 	"Short Tagline About Website",
+    		"image":	"/images/phone.jpg",
+    		"classes":	"double_tall top left"
+    	}
+	]
+}
