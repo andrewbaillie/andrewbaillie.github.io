@@ -1,6 +1,8 @@
 var Popup = new React.createClass({
 
 	propTypes: {
+		id: React.PropTypes.int,
+		siteData: React.PropTypes.object,
 		onUserInput: React.PropTypes.func
 	},
 
@@ -33,12 +35,16 @@ var Popup = new React.createClass({
 	},
 
 	render: function () {
+
+		console.log( this.props.siteData );
+
 		return (
 			<div className={this.state.classes} id="modal-18">
     			<div className="md-content">
-    				<h3>Modal Dialog - {this.props.id}</h3>
+    				<h3>{ this.props.siteData.title }</h3>
+    				<h4>{ this.props.siteData.tagline }</h4>
     				<div>
-    					<p>This is a modal window. You can do the following things with it:</p>
+    					<img height="100" src={ this.props.siteData.image } alt={ this.props.siteData.title } />
     					<p>
     						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -98,21 +104,8 @@ var Website = new React.createClass( {
 
   		this.setState( { portfolioClasses: 'portfolio selected' } );
 
-
-  		// $(this).addClass('highlight');
-
-// if ( $('.portfolio').hasClass('selected') ) {
-// 		// 	$('.portfolio').removeClass('selected');
-// 		// 	$('.item').removeClass('highlight');
-// 		// } else {
-// 			$('.portfolio').addClass('selected');
-// 			$(this).addClass('highlight');
-// 		// }
-
-
-
   		ReactDOM.render(
-			<Popup id={id} onUserInput={this.popupHasClosed} />,
+			<Popup id={id} siteData={this.state.sites[id]} onUserInput={this.popupHasClosed} />,
 			document.getElementById('popup')
 		);
 

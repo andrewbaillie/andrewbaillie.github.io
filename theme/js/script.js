@@ -3,6 +3,8 @@
 var Popup = new React.createClass({
 
 	propTypes: {
+		id: React.PropTypes.int,
+		siteData: React.PropTypes.object,
 		onUserInput: React.PropTypes.func
 	},
 
@@ -33,6 +35,9 @@ var Popup = new React.createClass({
 	},
 
 	render: function render() {
+
+		console.log(this.props.siteData);
+
 		return React.createElement(
 			"div",
 			{ className: this.state.classes, id: "modal-18" },
@@ -42,17 +47,17 @@ var Popup = new React.createClass({
 				React.createElement(
 					"h3",
 					null,
-					"Modal Dialog - ",
-					this.props.id
+					this.props.siteData.title
+				),
+				React.createElement(
+					"h4",
+					null,
+					this.props.siteData.tagline
 				),
 				React.createElement(
 					"div",
 					null,
-					React.createElement(
-						"p",
-						null,
-						"This is a modal window. You can do the following things with it:"
-					),
+					React.createElement("img", { height: "100", src: this.props.siteData.image, alt: this.props.siteData.title }),
 					React.createElement(
 						"p",
 						null,
@@ -110,18 +115,7 @@ var Website = new React.createClass({
 
 		this.setState({ portfolioClasses: 'portfolio selected' });
 
-		// $(this).addClass('highlight');
-
-		// if ( $('.portfolio').hasClass('selected') ) {
-		// 		// 	$('.portfolio').removeClass('selected');
-		// 		// 	$('.item').removeClass('highlight');
-		// 		// } else {
-		// 			$('.portfolio').addClass('selected');
-		// 			$(this).addClass('highlight');
-		// 		// }
-
-
-		ReactDOM.render(React.createElement(Popup, { id: id, onUserInput: this.popupHasClosed }), document.getElementById('popup'));
+		ReactDOM.render(React.createElement(Popup, { id: id, siteData: this.state.sites[id], onUserInput: this.popupHasClosed }), document.getElementById('popup'));
 
 		return false;
 	},
