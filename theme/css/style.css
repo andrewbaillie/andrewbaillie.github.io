@@ -469,8 +469,9 @@ h3 {
   color: #fff;
   font-size: 17px;
   font-size: 1.7rem;
-  letter-spacing: 0.3em;
-  line-height: 2;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  padding-bottom: 0.5em;
   font-weight: 300;
   text-shadow: 0px 0px 2px black;
 }
@@ -485,9 +486,9 @@ h4 {
 
 p {
   margin: 0;
-  font-size: 13px;
-  font-size: 1.3rem;
-  line-height: 1.6;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.4;
   font-weight: 100;
   letter-spacing: 0.1em;
 }
@@ -625,6 +626,52 @@ html, body {
   transition: all 0.5s 0.1s;
 }
 
+.md-content .md-description {
+  margin: 10px 0 20px 0;
+  padding: 10px 10px 0 10px;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.md-content h3 {
+  text-align: center;
+}
+
+.md-content h4 {
+  text-transform: none;
+  padding-bottom: 0.5em;
+  font-style: italic;
+}
+
+.md-content p {
+  padding-bottom: 10px;
+}
+
+.md-close {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 25px;
+}
+
+.md-visit {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 25px;
+}
+
 /* ==========================================================================
    Main
    ========================================================================== */
@@ -738,7 +785,7 @@ nav ul li {
 }
 
 .portfolio .item:hover:after {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .portfolio .item:hover .inner {

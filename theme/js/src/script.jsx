@@ -42,17 +42,9 @@ var Popup = new React.createClass({
 			<div className={this.state.classes} id="modal-18">
     			<div className="md-content">
     				<h3>{ this.props.siteData.title }</h3>
-    				<h4>{ this.props.siteData.tagline }</h4>
+    				<a href="{ this.props.siteData.url }" className="md-visit">{ this.props.siteData.url }</a>
     				<div>
-    					<img height="100" src={ this.props.siteData.image } alt={ this.props.siteData.title } />
-    					<p>
-    						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    					</p>
+	    				<div className="md-description" dangerouslySetInnerHTML={ {__html: this.props.siteData.description} }></div>
     					<button className="md-close" onClick={this.handleClick}>Close</button>
     				</div>
     			</div>
