@@ -1,0 +1,31 @@
+/* ==========================================================================
+   About Me
+   ========================================================================== */
+
+.about-me {
+	padding: 15px;
+
+	p {
+		padding-bottom: 20px;
+		color: #fff; }
+
+	h1, h2 { font-weight: 400; }
+
+	h2 {
+		color: #fff;
+		padding: 10px 0;
+	}
+
+	.inner {
+		@include span( 3 of 5 );
+	}
+
+	aside {
+		@include span( 1.5 of 5 last );
+		margin-top: 20px;
+		box-sizing: border-box;
+		padding: 0 20px;
+		border-left: 1px solid #999;
+	}
+
+}
