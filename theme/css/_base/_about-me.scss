@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .about-me {
-	padding: 15px;
+	padding: 15px 0;
 
 	p {
 		padding-bottom: 20px;
@@ -24,7 +24,7 @@
 		@include span( 1.5 of 5 last );
 		margin-top: 20px;
 		box-sizing: border-box;
-		padding: 0 20px;
+		padding: 0 0 0 20px;
 		border-left: 1px solid #999;
 	}
 

@@ -2,37 +2,40 @@
    Main
    ========================================================================== */
 
-nav {
-	@include clearfix();
-	background: $lighter;
-	height: 50px;
-	padding: 10px 0;
-	margin-bottom: 1px;
-	box-sizing: border-box;
+.page-title {
+	text-align: center;
+	padding-bottom: 20px;
+	line-height: 1.4;
+	@include font-size( 3 );
 
-	h1 {
-		float: left;
-		padding-left: 15px;
-
-		span {
-			color: $fadeTitle;
-			@include font-size( 1.2 );
-		}
+	span {
+		display: block;
+		color: $fadeTitle;
+		@include font-size( 1.6 );
 	}
+}
+
+nav {
+	clear: both;
+	@include clearfix();
+	padding: 20px 0;
+	box-sizing: border-box;
+	text-align: center;
+	border-bottom: 1px solid #999;
+	margin-bottom: 20px;
 
 	ul {
-		float: right;
 		list-style-type: none;
-		padding: 0 15px 0 0;
+		padding: 0;
 		margin: 0;
 		font-weight: 300;
-		line-height: 30px;
+		line-height: 1;
 
 		li {
 			display: inline-block;
 			letter-spacing: 0.15em;
 			text-transform: uppercase;
-			margin-left: 15px;
+			margin: 0 15px;
 			@include font-size( 1.2 );
 		}
 	}
