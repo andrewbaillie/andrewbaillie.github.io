@@ -418,11 +418,11 @@ html {
 }
 
 body {
-  background: #000000;
+  background: #F38630;
 }
 
 .container {
-  padding: 50px 20px;
+  padding: 0 20px;
   max-width: 1040px;
   margin-left: auto;
   margin-right: auto;
@@ -432,6 +432,10 @@ body {
   content: " ";
   display: block;
   clear: both;
+}
+
+main {
+  margin-bottom: 100px;
 }
 
 /* ==========================================================================
@@ -444,8 +448,7 @@ body {
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 h1 {
@@ -494,14 +497,14 @@ p {
 }
 
 a {
-  color: #aaaaaa;
+  color: #ffffff;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-  color: #eee;
+  color: #ffffff;
 }
 
 html, body {
@@ -729,27 +732,28 @@ html, body {
    Main
    ========================================================================== */
 .page-title {
-  text-align: center;
-  padding-bottom: 20px;
+  text-align: left;
+  padding: 30px 60px 0 60px;
   line-height: 1.4;
+  text-transform: none;
   font-size: 30px;
   font-size: 3rem;
 }
 
-.page-title span {
-  display: block;
-  color: #999;
-  font-size: 16px;
-  font-size: 1.6rem;
+.page-sub-title {
+  text-align: left;
+  padding: 0 60px 30px 60px;
+  line-height: 1.4;
+  text-transform: none;
+  font-size: 40px;
+  font-size: 4rem;
+  color: #E0E4CC;
 }
 
 nav {
   clear: both;
-  padding: 20px 0;
   box-sizing: border-box;
-  text-align: center;
-  border-bottom: 1px solid #999;
-  margin-bottom: 20px;
+  background: #FA6900;
 }
 
 nav:after {
@@ -761,18 +765,50 @@ nav:after {
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  font-weight: 300;
-  line-height: 1;
+  font-weight: 400;
+  line-height: 60px;
+  margin: 0 auto;
+}
+
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 nav ul li {
-  display: inline-block;
+  float: left;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  margin: 0 15px;
-  font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+nav ul li a, nav ul li:after {
+  padding: 0 10px;
+}
+
+nav ul li a {
+  float: left;
+}
+
+nav ul li:after {
+  float: right;
+  content: '\2022';
+  color: #F38630;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+nav ul li:last-child:after {
+  display: none;
+}
+
+nav ul li.talk {
+  float: right;
+  background: #69D2E7;
+  line-height: 18px;
+  padding: 12px 20px;
 }
 
 @media (max-width: 680px) {
@@ -842,7 +878,7 @@ nav ul li {
 }
 
 .portfolio .item:hover:after {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(105, 210, 231, 0.8);
 }
 
 .portfolio .item:hover .inner {
