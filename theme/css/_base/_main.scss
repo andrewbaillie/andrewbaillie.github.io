@@ -113,8 +113,8 @@ nav {
 	}
 
 	.item {
-		@include span( 1 of 5 );
-		padding-bottom: span( 1 of 5 );
+		@include span( 1 of 4 );
+		padding-bottom: span( 1 of 4 );
 		position: relative;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -167,47 +167,24 @@ nav {
 
 
 		&.double {
-			@include span( 2 of 5 );
-			padding-bottom: span( 2 of 5 );
+			@include span( 2 of 4 );
+			padding-bottom: span( 2 of 4 );
 		}
 
 		&.double_wide {
-			@include span( 2 of 5 );
-			padding-bottom: span( 1 of 5 );
+			@include span( 2 of 4 );
+			padding-bottom: span( 1 of 4 );
 		}
 
 		&.double_tall {
-			@include span( 1 of 5 );
-			padding-bottom: span( 2 of 5 );
+			@include span( 1 of 4 );
+			padding-bottom: span( 2 of 4 );
 		}
 	}
 }
 
 
-@media (max-width: 900px) {
-
-	.portfolio {
-		.item {
-			@include span( 2 of 4 );
-			padding-bottom: span( 1 of 4 );
-
-			&.double, &.double_tall  {
-				@include span( 2 of 4 );
-				padding-bottom: span( 2 of 4 );
-			}
-
-			&.double_wide {
-				@include span( 2 of 4 );
-				padding-bottom: span( 1 of 4 );
-			}
-
-		}
-	}
-
-}
-
-
-@media (max-width: 680px) {
+@media (max-width: 768px) {
 
 	.portfolio {
 		.item {

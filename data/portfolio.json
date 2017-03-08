@@ -19,10 +19,18 @@
     	},
         {
             "url":      "http://www.google.com",
-            "title":    "Edinburgh Printmakers - Castle Mills Works",
+            "title":    "TotsBots",
             "tagline":  "Short Tagline About Website",
             "image":    "/images/placeholder.png",
             "classes":  "double top left",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget luctus felis. Mauris posuere dictum dui, ac venenatis lectus dapibus vitae. In tincidunt, erat ut scelerisque porta, lorem lectus facilisis arcu, non consequat justo tellus ut risus. Integer maximus magna dui, non laoreet lectus imperdiet ac. Sed eget nunc quis orci fringilla varius. Fusce consectetur, tellus non semper hendrerit, tortor eros imperdiet purus, quis sagittis lorem est in lacus. Fusce ultrices pulvinar orci tristique varius. Nam odio enim, porta in tincidunt nec, congue et orci. Duis semper enim varius venenatis scelerisque. In consectetur lobortis velit a interdum.</p>"
+        },
+        {
+            "url":      "http://www.google.com",
+            "title":    "Edinburgh Printmakers - Castle Mills Works",
+            "tagline":  "Short Tagline About Website",
+            "image":    "/images/placeholder.png",
+            "classes":  "double_wide top left",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget luctus felis. Mauris posuere dictum dui, ac venenatis lectus dapibus vitae. In tincidunt, erat ut scelerisque porta, lorem lectus facilisis arcu, non consequat justo tellus ut risus. Integer maximus magna dui, non laoreet lectus imperdiet ac. Sed eget nunc quis orci fringilla varius. Fusce consectetur, tellus non semper hendrerit, tortor eros imperdiet purus, quis sagittis lorem est in lacus. Fusce ultrices pulvinar orci tristique varius. Nam odio enim, porta in tincidunt nec, congue et orci. Duis semper enim varius venenatis scelerisque. In consectetur lobortis velit a interdum.</p>"
         },
     	{
@@ -30,7 +38,7 @@
     		"title":	"Wallace & Sewell",
     		"tagline": 	"Short Tagline About Website",
     		"image":	"/images/placeholder.png",
-    		"classes":	"double_tall top left",
+    		"classes":	"double top left",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget luctus felis. Mauris posuere dictum dui, ac venenatis lectus dapibus vitae. In tincidunt, erat ut scelerisque porta, lorem lectus facilisis arcu, non consequat justo tellus ut risus. Integer maximus magna dui, non laoreet lectus imperdiet ac. Sed eget nunc quis orci fringilla varius. Fusce consectetur, tellus non semper hendrerit, tortor eros imperdiet purus, quis sagittis lorem est in lacus. Fusce ultrices pulvinar orci tristique varius. Nam odio enim, porta in tincidunt nec, congue et orci. Duis semper enim varius venenatis scelerisque. In consectetur lobortis velit a interdum.</p>"
     	},
     	{
@@ -38,7 +46,7 @@
     		"title":	"Zero Waste Scotland",
     		"tagline": 	"Short Tagline About Website",
     		"image":	"/images/placeholder.png",
-    		"classes":	" top left",
+    		"classes":	"double_wide top left",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget luctus felis. Mauris posuere dictum dui, ac venenatis lectus dapibus vitae. In tincidunt, erat ut scelerisque porta, lorem lectus facilisis arcu, non consequat justo tellus ut risus. Integer maximus magna dui, non laoreet lectus imperdiet ac. Sed eget nunc quis orci fringilla varius. Fusce consectetur, tellus non semper hendrerit, tortor eros imperdiet purus, quis sagittis lorem est in lacus. Fusce ultrices pulvinar orci tristique varius. Nam odio enim, porta in tincidunt nec, congue et orci. Duis semper enim varius venenatis scelerisque. In consectetur lobortis velit a interdum.</p>"
     	},
     	{
@@ -46,15 +54,7 @@
     		"title":	"Resource Efficient Scotland",
     		"tagline": 	"Short Tagline About Website",
     		"image":	"/images/placeholder.png",
-    		"classes":	" top left",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget luctus felis. Mauris posuere dictum dui, ac venenatis lectus dapibus vitae. In tincidunt, erat ut scelerisque porta, lorem lectus facilisis arcu, non consequat justo tellus ut risus. Integer maximus magna dui, non laoreet lectus imperdiet ac. Sed eget nunc quis orci fringilla varius. Fusce consectetur, tellus non semper hendrerit, tortor eros imperdiet purus, quis sagittis lorem est in lacus. Fusce ultrices pulvinar orci tristique varius. Nam odio enim, porta in tincidunt nec, congue et orci. Duis semper enim varius venenatis scelerisque. In consectetur lobortis velit a interdum.</p>"
-    	},
-    	{
-    		"url":		"http://www.google.com",
-    		"title":	"STV",
-    		"tagline": 	"Short Tagline About Website",
-    		"image":	"/images/placeholder.png",
-    		"classes":	" top left",
+    		"classes":	"double_wide top left",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget luctus felis. Mauris posuere dictum dui, ac venenatis lectus dapibus vitae. In tincidunt, erat ut scelerisque porta, lorem lectus facilisis arcu, non consequat justo tellus ut risus. Integer maximus magna dui, non laoreet lectus imperdiet ac. Sed eget nunc quis orci fringilla varius. Fusce consectetur, tellus non semper hendrerit, tortor eros imperdiet purus, quis sagittis lorem est in lacus. Fusce ultrices pulvinar orci tristique varius. Nam odio enim, porta in tincidunt nec, congue et orci. Duis semper enim varius venenatis scelerisque. In consectetur lobortis velit a interdum.</p>"
     	},
         {
@@ -65,6 +65,14 @@
             "classes":  "double top left",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget luctus felis. Mauris posuere dictum dui, ac venenatis lectus dapibus vitae. In tincidunt, erat ut scelerisque porta, lorem lectus facilisis arcu, non consequat justo tellus ut risus. Integer maximus magna dui, non laoreet lectus imperdiet ac. Sed eget nunc quis orci fringilla varius. Fusce consectetur, tellus non semper hendrerit, tortor eros imperdiet purus, quis sagittis lorem est in lacus. Fusce ultrices pulvinar orci tristique varius. Nam odio enim, porta in tincidunt nec, congue et orci. Duis semper enim varius venenatis scelerisque. In consectetur lobortis velit a interdum.</p>"
         },
+    	{
+    		"url":		"http://www.google.com",
+    		"title":	"STV",
+    		"tagline": 	"Short Tagline About Website",
+    		"image":	"/images/placeholder.png",
+    		"classes":	"double_wide top left",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget luctus felis. Mauris posuere dictum dui, ac venenatis lectus dapibus vitae. In tincidunt, erat ut scelerisque porta, lorem lectus facilisis arcu, non consequat justo tellus ut risus. Integer maximus magna dui, non laoreet lectus imperdiet ac. Sed eget nunc quis orci fringilla varius. Fusce consectetur, tellus non semper hendrerit, tortor eros imperdiet purus, quis sagittis lorem est in lacus. Fusce ultrices pulvinar orci tristique varius. Nam odio enim, porta in tincidunt nec, congue et orci. Duis semper enim varius venenatis scelerisque. In consectetur lobortis velit a interdum.</p>"
+    	},
     	{
     		"url":		"http://www.google.com",
     		"title":	"SOAR Running",
@@ -91,14 +99,6 @@
     	},
     	{
     		"url":		"http://www.google.com",
-    		"title":	"Celtic Media Festival",
-    		"tagline": 	"Short Tagline About Website",
-    		"image":	"/images/placeholder.png",
-    		"classes":	"double_tall top left",
-            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget luctus felis. Mauris posuere dictum dui, ac venenatis lectus dapibus vitae. In tincidunt, erat ut scelerisque porta, lorem lectus facilisis arcu, non consequat justo tellus ut risus. Integer maximus magna dui, non laoreet lectus imperdiet ac. Sed eget nunc quis orci fringilla varius. Fusce consectetur, tellus non semper hendrerit, tortor eros imperdiet purus, quis sagittis lorem est in lacus. Fusce ultrices pulvinar orci tristique varius. Nam odio enim, porta in tincidunt nec, congue et orci. Duis semper enim varius venenatis scelerisque. In consectetur lobortis velit a interdum.</p>"
-    	},
-    	{
-    		"url":		"http://www.google.com",
     		"title":	"Visual Arts Scotland",
     		"tagline": 	"Short Tagline About Website",
     		"image":	"/images/placeholder.png",
@@ -110,7 +110,7 @@
     		"title":	"Pencourage",
     		"tagline": 	"Short Tagline About Website",
     		"image":	"/images/placeholder.png",
-    		"classes":	" top left",
+    		"classes":	"double_wide top left",
             "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget luctus felis. Mauris posuere dictum dui, ac venenatis lectus dapibus vitae. In tincidunt, erat ut scelerisque porta, lorem lectus facilisis arcu, non consequat justo tellus ut risus. Integer maximus magna dui, non laoreet lectus imperdiet ac. Sed eget nunc quis orci fringilla varius. Fusce consectetur, tellus non semper hendrerit, tortor eros imperdiet purus, quis sagittis lorem est in lacus. Fusce ultrices pulvinar orci tristique varius. Nam odio enim, porta in tincidunt nec, congue et orci. Duis semper enim varius venenatis scelerisque. In consectetur lobortis velit a interdum.</p>"
     	}
 	]
