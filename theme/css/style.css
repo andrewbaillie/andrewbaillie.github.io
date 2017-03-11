@@ -700,6 +700,13 @@ html, body {
   float: left;
 }
 
+@media (max-width: 768px) {
+  .about-me .inner {
+    width: 100%;
+    float: left;
+  }
+}
+
 .about-me aside {
   width: 30%;
   float: right;
@@ -714,6 +721,13 @@ html, body {
 
 .about-me aside p {
   padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .about-me aside {
+    width: 100%;
+    float: left;
+  }
 }
 
 /* ==========================================================================
@@ -788,6 +802,12 @@ nav ul li a, nav ul li:after {
   padding: 0 10px;
 }
 
+@media (max-width: 480px) {
+  nav ul li a, nav ul li:after {
+    padding: 0 5px;
+  }
+}
+
 nav ul li a {
   float: left;
 }
@@ -800,7 +820,7 @@ nav ul li:after {
   font-size: 1.6rem;
 }
 
-nav ul li:last-child:after {
+nav ul li:nth-last-child(2):after, nav ul li:last-child:after {
   display: none;
 }
 
@@ -809,27 +829,6 @@ nav ul li.talk {
   background: #69D2E7;
   line-height: 18px;
   padding: 12px 20px;
-}
-
-@media (max-width: 680px) {
-  nav {
-    height: auto;
-  }
-  nav ul {
-    clear: both;
-    width: 100%;
-    padding: 0;
-  }
-}
-
-.intro {
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-}
-
-.intro p {
-  padding: 20px 20% 0;
 }
 
 .portfolio:after {
@@ -954,10 +953,5 @@ nav ul li.talk {
     width: 100%;
     float: left;
     padding-bottom: 100%;
-  }
-  .portfolio .item.double_wide {
-    width: 100%;
-    float: left;
-    padding-bottom: 50%;
   }
 }

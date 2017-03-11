@@ -42,6 +42,10 @@ nav {
 
 			a, &:after {
 				padding: 0 10px;
+
+				@media (max-width: 480px) { 
+					padding: 0 5px;
+				}
 			}
 
 			a {
@@ -54,7 +58,7 @@ nav {
 				@include font-size( 1.6 );
 			}
 
-			&:last-child:after { display: none; }
+			&:nth-last-child(2):after, &:last-child:after { display: none; }
 
 			&.talk {
 				float: right;
@@ -66,30 +70,6 @@ nav {
 		}
 	}
 }
-
-@media (max-width: 680px) {
-
-	nav {
-		height: auto;
-
-		ul {
-			clear: both;
-			width: 100%;
-			padding: 0;
-		}
-	}
-
-}
-
-
-.intro {
-	padding: 20px;
-	text-align: center;
-	color: #fff;
-
-	p { padding: 20px 20% 0; }
-}
-
 
 .portfolio {
 	@include clearfix();
@@ -195,12 +175,6 @@ nav {
 				@include span( 1 of 1 );
 				padding-bottom: span( 1 of 1 );
 			}
-
-			&.double_wide {
-				@include span( 1 of 1 );
-				padding-bottom: span( 0.5 of 1 );
-			}
-
 		}
 	}
 

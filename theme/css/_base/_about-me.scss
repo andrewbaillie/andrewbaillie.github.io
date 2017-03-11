@@ -18,6 +18,10 @@
 
 	.inner {
 		@include span( 3 of 5 );
+
+		@media (max-width: 768px) { 
+			@include span( 5 of 5 );
+		}
 	}
 
 	aside {
@@ -28,6 +32,12 @@
 
 		h4, p { color: $asideText; }
 		p { padding-bottom: 0; }
+
+		@media (max-width: 768px) {
+			@include span( 5 of 5 );
+		}
 	}
+
+
 
 }
