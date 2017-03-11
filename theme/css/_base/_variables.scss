@@ -2,17 +2,20 @@
    Variables
    ========================================================================== */
 
-$background: #F38630;
+$background: #ffffff;
 $navBg: #FA6900;
 $lighter: #111111;
 $highlight: #69D2E7;
 
+$asideBg: #FA6900;
+$asideText: #fff;
+
 $link: #ffffff;
 $linkHover: #ffffff;
-$title: #fff;
+$title: #FA6900;
 $fadeTitle: #999;
-$subTitle: #E0E4CC;
-
+$subTitle: #69D2E7;
+$bodyText: #444;
 
 @mixin clearfix {
 	&:after {

@@ -418,7 +418,7 @@ html {
 }
 
 body {
-  background: #F38630;
+  background: #ffffff;
 }
 
 .container {
@@ -452,7 +452,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  color: #fff;
+  color: #FA6900;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 30px;
@@ -465,34 +465,33 @@ h2 {
   line-height: 1.4;
   text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 h3 {
-  color: #fff;
+  color: #FA6900;
   font-size: 17px;
   font-size: 1.7rem;
   letter-spacing: 0.1em;
   line-height: 1.4;
   padding-bottom: 0.5em;
   font-weight: 300;
-  text-shadow: 0px 0px 2px black;
 }
 
 h4 {
-  color: #fff;
-  font-size: 12px;
-  font-size: 1.2rem;
+  color: #FA6900;
+  padding-bottom: 0.5em;
+  font-size: 15px;
+  font-size: 1.5rem;
   letter-spacing: 0.1em;
-  text-shadow: 0px 0px 2px black;
 }
 
 p {
   margin: 0;
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1.4;
-  font-weight: 100;
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 300;
   letter-spacing: 0.1em;
 }
 
@@ -684,7 +683,7 @@ html, body {
 
 .about-me p {
   padding-bottom: 20px;
-  color: #fff;
+  color: #444;
 }
 
 .about-me h1, .about-me h2 {
@@ -704,28 +703,29 @@ html, body {
 .about-me aside {
   width: 30%;
   float: right;
-  margin-top: 20px;
   box-sizing: border-box;
-  padding: 0 0 0 20px;
-  border-left: 1px solid #999;
+  padding: 20px;
+  background: #FA6900;
+}
+
+.about-me aside h4, .about-me aside p {
+  color: #fff;
+}
+
+.about-me aside p {
+  padding-bottom: 0;
 }
 
 /* ==========================================================================
    Contact Me
    ========================================================================== */
-.contact-me {
-  padding: 15px;
-}
-
 .contact-me h1, .contact-me h2 {
-  text-align: center;
   font-weight: 400;
 }
 
 .contact-me p {
-  text-align: center;
   padding-bottom: 20px;
-  color: #fff;
+  color: #444;
 }
 
 /* ==========================================================================
@@ -733,7 +733,7 @@ html, body {
    ========================================================================== */
 .page-title {
   text-align: left;
-  padding: 30px 60px 0 60px;
+  padding: 30px 0 0 0;
   line-height: 1.4;
   text-transform: none;
   font-size: 30px;
@@ -742,12 +742,12 @@ html, body {
 
 .page-sub-title {
   text-align: left;
-  padding: 0 60px 30px 60px;
+  padding: 0 0 30px 0;
   line-height: 1.4;
   text-transform: none;
   font-size: 40px;
   font-size: 4rem;
-  color: #E0E4CC;
+  color: #69D2E7;
 }
 
 nav {
@@ -795,7 +795,7 @@ nav ul li a {
 nav ul li:after {
   float: right;
   content: '\2022';
-  color: #F38630;
+  color: #ffffff;
   font-size: 16px;
   font-size: 1.6rem;
 }
@@ -897,7 +897,7 @@ nav ul li.talk {
   transition: opacity 0.4s ease-in-out;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
-  color: #fff;
+  color: #FA6900;
 }
 
 .portfolio .item.top .inner {

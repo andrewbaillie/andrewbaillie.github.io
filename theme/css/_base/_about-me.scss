@@ -7,7 +7,7 @@
 
 	p {
 		padding-bottom: 20px;
-		color: #fff; }
+		color: $bodyText; }
 
 	h1, h2 { font-weight: 400; }
 
@@ -22,10 +22,12 @@
 
 	aside {
 		@include span( 1.5 of 5 last );
-		margin-top: 20px;
 		box-sizing: border-box;
-		padding: 0 0 0 20px;
-		border-left: 1px solid #999;
+		padding: 20px;
+		background: $asideBg;
+
+		h4, p { color: $asideText; }
+		p { padding-bottom: 0; }
 	}
 
 }
